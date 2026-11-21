@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GTA VI Trophy Guide &amp; Tracker — all 55 PS5 trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="kicker">Grand Theft Auto VI · PlayStation 5 · 55 trophies</p>
+      <h1>GTA VI Trophy Guide &amp; Tracker</h1>
+      <p class="lede">Every trophy with its official name, description and grade, a guide in our own words with its sources, a roadmap to the platinum — and a checklist that saves your progress in this browser.</p>
+    </div>
+    <div class="progress-card" aria-label="Progress">
+      <p class="progress-number"><span id="progressEarned">0</span><span class="of"> / 55 earned</span></p>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <p class="progress-grades" id="progressGrades"></p>
+      <p class="progress-note" id="progressNote">Tick a trophy when it pops. Nothing leaves this browser.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the Platinum</h2>
+    <dl class="facts" id="roadmapFacts"></dl>
+    <ol class="steps" id="roadmapSteps"></ol>
+    <div class="warnings" id="roadmapWarnings"></div>
+    <p class="source-line" id="roadmapSources"></p>
+  </section>
+
+  <section class="tracker" aria-label="Trophy tracker">
+    <div class="controls">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission, keyword…" autocomplete="off"></label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <div class="kind-filter" id="kindFilter" role="group" aria-label="Filter by kind">
+        <button type="button" data-kind="all" class="active">All</button>
+        <button type="button" data-kind="story">Story</button>
+        <button type="button" data-kind="missable">Missable</button>
+        <button type="button" data-kind="collectibles">Collectibles</button>
+        <button type="button" data-kind="activities">Activities</button>
+        <button type="button" data-kind="online">Online</button>
+      </div>
+      <label>Show
+        <select id="earnedFilter">
+          <option value="all">All trophies</option>
+          <option value="remaining">Still to earn</option>
+          <option value="earned">Earned only</option>
+        </select>
+      </label>
+      <label class="spoiler"><input id="spoilerToggle" type="checkbox" checked> Hide story spoilers</label>
+      <div class="io">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import">Import progress <input id="importFile" type="file" accept="application/json"></label>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </div>
+    <p class="list-count" id="listCount"></p>
+    <div class="tracker-grid">
+      <ol class="trophy-list" id="trophyList"></ol>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Sources: the official trophy names and descriptions as Exophase and PSNProfiles listed them on 18 November 2026; methods and the roadmap from PowerPyx, KeenGamer, GameMapa, eGamers, Planet GTA 6, Insider Gaming and Games.gg — each trophy's guide names its sources. This guide is an unofficial fan guide: it uses no Rockstar logo, artwork or game screenshots, and it works fully offline.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
